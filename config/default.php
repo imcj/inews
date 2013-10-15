@@ -9,17 +9,17 @@ return array(
      */
     'site'          => array(
         // 网站标题，会出现在标题和网站Home菜单
-        'title'        => 'iNews',
+        'title'        => 'HaXe China',
         // SEO标题后缀
-        'title_suffix' => '- Mac/iOS news',
+        'title_suffix' => '- Haxe china',
         // 非文章页面的META
-        'default_meta' => 'Upcoming Mac/iOS news for you, Daily Mac/iOS tips to live life easy.',
+        'default_meta' => '.',
         // SEO关键字
-        'keywords'     => 'Mac, iOS, iPhone tips, Mac tips, iOS tips, inews.io, inews',
+        'keywords'     => '',
         // 页面底部配置，HTML代码
         'footer'       => '',
         // 搜索栏配置
-        'search_bar'   => '<a href="/p/406">简介</a> | <a href="https://github.com/Trimidea/inews-community/issues" target="_blank">反馈</a> | ',
+        'search_bar'   => '<a href="/p/406">简介</a>',
         // 菜单配置
         'menus'        => array(
             array('Latest', '/latest', 'clock'),

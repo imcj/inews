@@ -1,5 +1,3 @@
-<span class="stamp fontello">TOP</span>
-
 <ul class="news typo">
   <?php if(isset($kw)) { ?>
     <li class="news-item news-item-cap"><strong>Search result for: <span class="highlight"><?php echo e($kw); ?></span></strong></li>

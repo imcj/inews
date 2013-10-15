@@ -28,29 +28,6 @@
             <small><?php echo $article->created_at; ?></small>
         </div>
 
-		<script type="text/javascript" charset="utf-8">
-		(function(){
-		  var img = document.querySelector('.entry .typo-p img');
-		  var _w = 106 , _h = 58;
-		  var param = {
-			url:location.href,
-			type:'5',
-			count:'1',
-			appkey:'',
-			title:'',
-			pic: img ? img.src : '',
-			ralateUid:'',
-			language:'zh_cn',
-			rnd:new Date().valueOf()
-		  }
-		  var temp = [];
-		  for( var p in param ){
-			temp.push(p + '=' + encodeURIComponent( param[p] || '' ) )
-		  }
-		  document.write('<iframe allowTransparency="true" style="float:right;" frameborder="0" scrolling="no" src="http://hits.sinajs.cn/A1/weiboshare.html?' + temp.join('&') + '" width="'+ _w+'" height="'+_h+'"></iframe>')
-		})()
-		</script>
-
         <?php if($user && ($user->name == $article_au->name || $user->isAdmin())): ?>
         <div class="typo-p">
             <a class="tag" href="/p/<?php echo $article->id; ?>/destroy">delete</a>

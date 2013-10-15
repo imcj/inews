@@ -29,8 +29,8 @@ class Register extends Web
         }
 
         // Check user name rule
-        if (!preg_match("/^[\w]{4,20}$/", $this->input->data('name'))) {
-            $this->alert('User name only use a-z and 0-9, length must be 6-20');
+        if (!preg_match("/^[\w]{2,20}$/", $this->input->data('name'))) {
+            $this->alert('User name only use a-z and 0-9, length must be 2-20');
         }
 
         // Check password length
